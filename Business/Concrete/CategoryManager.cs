@@ -28,14 +28,8 @@ namespace Business.Concrete
             return new SuccessDataResult<Category> (_categoryDal.Get(c => c.CategoryId == categoryId));   
         }
 
-        IDataResult<List<Category>> ICategoryService.GetAll()
-        {
-            throw new NotImplementedException();
-        }
+       
 
-        IDataResult<Category> ICategoryService.GetById(int categoryId)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
